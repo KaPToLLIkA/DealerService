@@ -269,6 +269,7 @@
     <Compile Include="App_Start\Startup.Services.cs" />
     <Compile Include="Connections\DefaultSqlConnection.cs" />
     <Compile Include="Connections\ISqlConnectionProvider.cs" />
+    <Compile Include="Controllers\HomePage\HomeController.cs" />
     <Compile Include="Controllers\OperatorPage\OperatorController.cs" />
     <Compile Include="DI\DefaultDependencyResolver.cs" />
     <Compile Include="Global.asax.cs">

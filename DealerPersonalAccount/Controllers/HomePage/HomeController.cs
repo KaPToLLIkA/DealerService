@@ -1,9 +1,10 @@
 ﻿using System.Web.Mvc;
 
-namespace DealerPersonalAccount.Controllers.Home
+namespace DealerPersonalAccount.Controllers.HomePage
 {
     public class HomeController : Controller
     {
+
         public HomeController()
         {
             
