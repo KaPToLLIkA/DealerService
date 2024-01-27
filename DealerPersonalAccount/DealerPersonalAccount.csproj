@@ -271,6 +271,7 @@
     <Compile Include="Connections\ISqlConnectionProvider.cs" />
     <Compile Include="Controllers\HomePage\HomeController.cs" />
     <Compile Include="Controllers\OperatorPage\OperatorController.cs" />
+    <Compile Include="Controllers\PaymentPage\PaymentController.cs" />
     <Compile Include="Controllers\UsersPage\UserController.cs" />
     <Compile Include="DI\DefaultDependencyResolver.cs" />
     <Compile Include="Global.asax.cs">
@@ -283,6 +284,7 @@
     <Compile Include="Models\Entity\Payment.cs" />
     <Compile Include="Models\Entity\Operator.cs" />
     <Compile Include="Models\Repository\IUserRepository.cs" />
+    <Compile Include="Models\Repository\PaymentRepository.cs" />
     <Compile Include="Models\Repository\UserRepository.cs" />
     <Compile Include="Models\Repository\IRepository.cs" />
     <Compile Include="Models\Repository\OperatorRepository.cs" />
@@ -290,6 +292,8 @@
     <Compile Include="Models\ViewModels\AgentViewModel.cs" />
     <Compile Include="Models\ViewModels\IViewModel.cs" />
     <Compile Include="Models\ViewModels\OperatorViewModel.cs" />
+    <Compile Include="Models\ViewModels\PaymentCreateViewModel.cs" />
+    <Compile Include="Models\ViewModels\PaymentViewModel.cs" />
     <Compile Include="Models\ViewModels\UserCreateViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -331,6 +335,8 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Agents.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
+    <Content Include="Views\Payment\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
