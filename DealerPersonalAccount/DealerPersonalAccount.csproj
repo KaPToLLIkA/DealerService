@@ -332,11 +332,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Operator\Index.cshtml" />
     <Content Include="Views\Operator\Create.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Agents.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
     <Content Include="Views\Payment\Create.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

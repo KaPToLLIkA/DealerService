@@ -21,5 +21,7 @@ namespace DealerPersonalAccount.Models.ViewModels
         public DateTime CreationDateTime { get; set; }
 
         public RoleType Role { get; set; }
+
+        public string RoleString => Role.ToString();
     }
 }
