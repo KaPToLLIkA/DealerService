@@ -1,32 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web.UI.WebControls;
+﻿using DealerPersonalAccount.Connections;
+using System;
 
 namespace DealerPersonalAccount.Models.Entity
 {
-    public sealed class User
+    public class User
     {
-        private static readonly Dictionary<string, RoleType> s_roleTypesMap = new Dictionary<string, RoleType>()
+        public static class Sql
         {
-            {"admin", RoleType.Admin},
-            {"agent", RoleType.Agent},
-        };
+            public static string TableName => SqlFormatter.FormatTableName("User");
 
-        private string _role;
+            public static string IdField => SqlFormatter.FormatFieldName(nameof(Id));
 
-        public int Id { get; set; }
+            public static string NameField => SqlFormatter.FormatFieldName(nameof(Name));
 
-        public string Name { get; set; }
+            public static string PasswordHashField => SqlFormatter.FormatFieldName(nameof(PasswordHash));
 
-        public string PasswordHash { get; set; }
+            public static string CreationDateTimeField => SqlFormatter.FormatFieldName(nameof(CreationDateTime));
 
-        public DateTime CreationDateTime { get; set; }
-
-        public string Role {
-            get => RoleType.ToString();
-            set => _role = value;
+            public static string RoleIdField => SqlFormatter.FormatFieldName(nameof(RoleId));
         }
 
-        public RoleType RoleType => s_roleTypesMap[_role];
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string PasswordHash { get; set; }
+        public DateTime CreationDateTime { get; set; }
+        public Role RoleId { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿namespace DealerPersonalAccount.Models.Entity
 {
-    public enum RoleType
+    public enum Role
     {
-        Agent,
-        Admin
+        Agent = 1,
+        Admin = 2
     }
 }

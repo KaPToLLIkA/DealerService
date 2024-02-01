@@ -269,6 +269,7 @@
     <Compile Include="App_Start\Startup.Services.cs" />
     <Compile Include="Connections\DefaultSqlConnection.cs" />
     <Compile Include="Connections\ISqlConnectionProvider.cs" />
+    <Compile Include="Connections\SqlFormatter.cs" />
     <Compile Include="Controllers\HomePage\HomeController.cs" />
     <Compile Include="Controllers\OperatorPage\OperatorController.cs" />
     <Compile Include="Controllers\PaymentPage\PaymentController.cs" />
@@ -279,7 +280,8 @@
     </Compile>
     <Compile Include="Models\App\Application.cs" />
     <Compile Include="Models\App\AppSettings.cs" />
-    <Compile Include="Models\Entity\RoleType.cs" />
+    <Compile Include="Models\Entity\Agent.cs" />
+    <Compile Include="Models\Entity\Role.cs" />
     <Compile Include="Models\Entity\User.cs" />
     <Compile Include="Models\Entity\Payment.cs" />
     <Compile Include="Models\Entity\Operator.cs" />
