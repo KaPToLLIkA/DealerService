@@ -285,10 +285,10 @@
     <Compile Include="Models\Entity\User.cs" />
     <Compile Include="Models\Entity\Payment.cs" />
     <Compile Include="Models\Entity\Operator.cs" />
-    <Compile Include="Models\Repository\IUserRepository.cs" />
+    <Compile Include="Models\Repository\Base\ISqlSelectQuery.cs" />
     <Compile Include="Models\Repository\PaymentRepository.cs" />
     <Compile Include="Models\Repository\UserRepository.cs" />
-    <Compile Include="Models\Repository\IRepository.cs" />
+    <Compile Include="Models\Repository\Base\ARepository.cs" />
     <Compile Include="Models\Repository\OperatorRepository.cs" />
     <Compile Include="Models\Validation\TaxDataCheck.cs" />
     <Compile Include="Models\ViewModels\AgentViewModel.cs" />
