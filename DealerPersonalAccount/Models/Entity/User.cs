@@ -1,5 +1,6 @@
 ﻿using DealerPersonalAccount.Connections;
 using System;
+using System.Reflection.Emit;
 
 namespace DealerPersonalAccount.Models.Entity
 {
@@ -18,6 +19,15 @@ namespace DealerPersonalAccount.Models.Entity
             public static string CreationDateTimeField => SqlFormatter.FormatFieldName(nameof(CreationDateTime));
 
             public static string RoleIdField => SqlFormatter.FormatFieldName(nameof(RoleId));
+
+            public static string SelectQueryHeader => 
+                $"SELECT " +
+                $"{IdField}," +
+                $"{NameField}," +
+                $"{CreationDateTimeField}," +
+                $"{PasswordHashField}," +
+                $"{RoleIdField}," +
+                $"FROM {TableName}";
         }
 
         public int Id { get; set; }

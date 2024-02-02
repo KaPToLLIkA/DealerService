@@ -14,6 +14,18 @@ namespace DealerPersonalAccount.Models.Entity
             public static string TotalEarningField => SqlFormatter.FormatFieldName(nameof(TotalEarning));
 
             public static string UserIdField => SqlFormatter.FormatFieldName(nameof(UserId));
+
+            public static string SelectQueryHeader =>
+                $"SELECT " +
+                $"a.{IdField}," +
+                $"a.{TotalEarningField}," +
+                $"a.{UserIdField}," +
+                $"u.{User.Sql.NameField}," +
+                $"u.{User.Sql.PasswordHashField}," +
+                $"u.{User.Sql.CreationDateTimeField} " +
+                $"FROM {TableName} as a " +
+                $"LEFT JOIN {User.Sql.TableName} as u " +
+                $"ON a.{UserIdField} = u.{User.Sql.IdField}"; 
         }
 
         public int Id { get; set; }

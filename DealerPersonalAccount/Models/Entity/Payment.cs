@@ -21,6 +21,16 @@ namespace DealerPersonalAccount.Models.Entity
             public static string AgentIdField => SqlFormatter.FormatFieldName(nameof(AgentId));
 
             public static string PriceField => SqlFormatter.FormatFieldName(nameof(Price));
+
+            public static string SelectQueryHeader =>
+                $"SELECT " +
+                $"{IdField}," +
+                $"{CreationDateTimeField}," +
+                $"{ClosingDateTimeField}," +
+                $"{OperatorIdField}," +
+                $"{AgentIdField}," +
+                $"{PriceField} " +
+                $"FROM {TableName}";
         }
 
         public int Id { get; set; }
