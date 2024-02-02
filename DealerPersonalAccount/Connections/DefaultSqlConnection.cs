@@ -12,7 +12,7 @@ namespace DealerPersonalAccount.Connections
             _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
 
-        public SqlConnection Create()
+        public SqlConnection Provide()
         {
             return new SqlConnection(_connectionString);
         }
